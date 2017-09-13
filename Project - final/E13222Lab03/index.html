@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Orders</title>
+</head>
+<body>
+<form action="searchdetails.php" method="POST">
+
+<h1>Find details of your patients</h1>
+<h3>Fill out one or more of the below and click "Search Now" to browse</h3>
+
+<table>
+<tr>
+<td>
+<label><b><center>Search by order number:</center></b></label>
+</td>
+<td>
+<input type="text" name="orderno">
+<input type="submit" value="Search Now">
+</td>
+</tr>
+</form>
+
+<form action="order.php" method="POST">
+
+<tr>
+<td>
+<label><b><center>Choose your size:</center></b></label>
+</td>
+<td>
+<input type="radio" name="size" value="small">Small
+<input type="radio" name="size" value="medium">Medium
+<input type="radio" name="size" value="large">Large
+</td>
+</tr>
+
+
+<tr>
+<td>
+<label><b><center>Choose your color:</center></b></label>
+</td>
+<td>
+<select name="color">
+    <option value="red" selected>Red</option>
+    <option value="purple">Purple</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<label><b><center>Extra items:</center></b></label>
+</td>
+<td>
+<input type="checkbox" name="caps" value="Cap">Cap
+<br>
+<input type="checkbox" name="bands" value="Wrist Band">Wrist Band
+</td>
+</tr>
+
+<tr>
+<td>
+<label><b><center>Deliver To:</center></b></label>
+</td>
+<td>
+<table>
+<tr>
+<td>
+<label><b>First Name:</b></label>
+</td>
+<td>
+<input type="text" name="fname">
+</td>
+</tr>
+<td>
+<label><b>Last Name:</b></label>
+</td>
+<td>
+<input type="text" name="lname">
+</td>
+<tr>
+<td>
+<label><b>Address1:</b></label>
+</td>
+<td>
+<input type="text" name="add1">
+</td>
+<tr>
+<td>
+<label><b>Address2:</b></label>
+</td>
+<td>
+<input type="text" name="add2">
+</td>
+<tr>
+<td>
+<label><b>Address3:</b></label>
+</td>
+<td>
+<input type="text" name="add3">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<label><b><center>Your comments:</center></b></label>
+</td>
+<td>
+<textarea name="comments" rows="10" cols="60"></textarea>
+</td>
+</tr>
+
+
+<tr>
+<td></td>
+<td>
+<input type="submit" value="Order Now">
+</td>
+</tr>
+</form>
+
+</body>
+</html>
